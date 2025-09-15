@@ -73,4 +73,4 @@ def is_password_strong(password):
 
 # Main execution
 paswrd = pyautogui.password(text='Enter your password to check strength:', title='Password Strength Checker', default='', mask='*')
-print(is_password_strong(paswrd))
+pyautogui.alert(is_password_strong(paswrd))
